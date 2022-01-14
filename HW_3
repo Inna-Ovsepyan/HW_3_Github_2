@@ -1,0 +1,99 @@
+GitHub. HW_2
+1. На локальном репозитории сделать ветки для:
+- Postman
+- Jmeter
+- CheckLists
+- Bag Reports
+- SQL
+- Charles
+- Mobile testing
+=======================
+git clone https://github.com/Inna-Ovsepyan/HW_3_Github_2.git
+cd HW_3_Github_2
+git branch "название ветки" (повторяем операцию для создания каждой ветки)
+
+
+
+2. Запушить все ветки на внешний репозиторий
+git push origin Postman (повторяем для каждой ветки)
+
+
+3. В ветке Bag Reports сделать текстовый документ со структурой баг репорта
+git checkout Bag_Reports
+cat> file.txt
+
+Bug ID
+ID: number 55
+Name: Cart- unable to add new item to my cart
+Reporter: Ovsepyan Inna
+Submit Date: 12/01/2022
+
+Bug overview
+Summary: When my cart contains one item, 
+i am unable to add a second item via the 
+add to cart button on a product page
+URL: www.bugstore.com/ product
+Screenshot: www.bugstore.com/7788
+
+Environment
+Operating System: Windows 11
+Browser: Chrome 97.0.4692.71
+
+ctr+c
+
+
+4. Запушить структуру багрепорта на внешний репозиторий
+git add file.txt
+git commit -m "reports"
+git push
+
+
+5. Вмержить ветку Bag Reports в Main
+git checkout main
+git merge Bag_Reports
+
+
+6. Запушить main на внешний репозиторий
+git push -u origin main 
+
+
+7. В ветке CheckLists набросать структуру чек листа
+
+git checkout CheckLists
+cat> check_list.txt
+
+Чек лист функционального тестирования
+☑ Сайт открывается и доступен.
+☑ При попытке повторно открыть сайт, он открывается и доступен.
+☑ Все кнопки на сайте нажимаются.
+☑ Все ссылки на сайте открываются.
+☑ На сайте нет битых ссылок.
+☑ Проверить все формы на сайте.
+☑ Проверить валидацию всех обязательных полей.
+☑ Знак звездочки есть у всех обязательных полей.
+☑ Проверить валидацию для всех необязательных полей.
+☑ Проверить основные элементы сайта.
+☑ Проверить работу меню.
+☑ Проверить, что загруженные документы открываются правильно.
+☑ Отправка форм работает корректно.
+☑ Проверить, что будет, если удалить куки, находясь на сайте.
+☑ Проверить, что будет, если удалить куки после посещения сайта.
+☑ Все данные в списках в хронологическом порядке.
+
+ctrl+c
+
+8. Запушить структуру на внешний репозиторий
+git add check_list.txt
+git commit -m "check"
+git push
+
+9. На внешнем репозитории сделать Pull Request ветки CheckLists в main
+HW_3_Github_2
+Compare & Pull request
+Create pull request
+Merge pull request
+Confim merge
+
+
+10. Синхронизировать Внешнюю и Локальную ветки Main
+git pull
