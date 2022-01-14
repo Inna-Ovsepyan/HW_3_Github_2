@@ -1,0 +1,16 @@
+Bug ID
+ID: number 55
+Name: Cart- unable to add new item to my cart
+Reporter: Ovsepyan Inna
+Submit Date: 12/01/2022
+
+Bug overview
+Summary: When my cart contains one item, 
+i am unable to add a second item via the 
+add to cart button on a product page
+URL: www.bugstore.com/ product
+Screenshot: www.bugstore.com/7788
+
+Environment
+Operating System: Windows 11
+Browser: Chrome 97.0.4692.71
