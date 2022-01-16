@@ -3,7 +3,7 @@ GitHub. HW_2
 - Postman
 - Jmeter
 - CheckLists
-- Bag Reports
+- Bug Reports
 - SQL
 - Charles
 - Mobile testing
@@ -18,8 +18,8 @@ git branch "название ветки" (повторяем операцию д
 git push origin Postman (повторяем для каждой ветки)
 
 
-3. В ветке Bag Reports сделать текстовый документ со структурой баг репорта
-git checkout Bag_Reports
+3. В ветке Bug Reports сделать текстовый документ со структурой баг репорта
+git checkout Bug_Reports
 cat> file.txt
 
 Bug ID
@@ -48,9 +48,9 @@ git commit -m "reports"
 git push
 
 
-5. Вмержить ветку Bag Reports в Main
+5. Вмержить ветку Bug Reports в Main
 git checkout main
-git merge Bag_Reports
+git merge Bug_Reports
 
 
 6. Запушить main на внешний репозиторий
